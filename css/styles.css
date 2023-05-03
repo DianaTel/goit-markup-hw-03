@@ -1,0 +1,225 @@
+:root {
+    --main-font-family: 'Roboto', sans-serif;
+    --secondary-font-family: 'Raleway', sans-serif;
+    --primary-text-color-dark: #434455;
+    --primary-text-color-light: #FFFFFF;
+    --secondary-text-color-dark: #2E2F42;
+    --secondary-text-color-light: #F4F4FD;
+    --accent-color: #4D5AE5;
+    --accent-color-two: #404BBF;
+}
+
+body {
+    font-family: var(--main-font-family);
+    background-color: var(--primary-text-color-light);
+    color: var(--primary-text-color-dark);
+}
+
+/* header */
+.logo {
+    font-family: var(--secondary-font-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.logo-black {
+    color: var(--secondary-text-color-dark);
+}
+
+.nav-address-list {
+    font-style: normal;
+}
+.contacts {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color-dark);
+    text-decoration: none;
+}
+
+.contacts:hover,
+.contacts:focus {
+    color: var(--accent-color-two);
+}
+.link {
+    text-decoration: none;
+}
+.list {
+    list-style: none;
+}
+/* footer */
+.section-adrress {
+    background-color: var(--secondary-text-color-dark);
+}
+
+.logo-white {
+    color: var(--secondary-text-color-light);
+}
+.footer-text {
+    background-color: var(--primary-text-color-light);
+}
+/* index.html */
+/* hero */
+.hero {
+    background-color: var(--secondary-text-color-dark);
+}
+
+.hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color-light);
+}
+
+.hero-btn {
+    background-color: var(--accent-color);
+    font-family: var(--main-font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--primary-text-color-light);
+    cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--accent-color-two);
+}
+
+/* features */
+.features-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color-dark);
+}
+
+.features-caption {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color-dark);
+}
+
+/* we doing */
+.works-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--secondary-text-color-dark);
+}
+
+.works-list {
+    background-color: var(--primary-text-color-light);
+}
+
+/* our team */
+.section-team {
+    background-color: #F4F4FD;
+}
+
+.team-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--secondary-text-color-dark);
+}
+
+.team-caption {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color-dark);
+}
+
+.team-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color-dark);
+}
+
+.team-list-elem {
+    background-color: var(--primary-text-color-light);
+}
+
+/* portfolio.html */
+.header-nav {
+    list-style: none;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-address {
+    font-style: normal;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color-dark);
+    text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+   color: var(--accent-color-two);
+}
+
+.btn-nav {
+    font-family: var(--main-font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--accent-color);
+    background-color: var(--secondary-text-color-light);
+}
+
+.btn-nav:hover,
+.btn-nav:focus {
+    color: var(--primary-text-color-light);
+    background-color: var(--accent-color-two);
+    cursor: pointer;
+}
+
+/* gallery */
+.gallery-link {
+    text-decoration: none;
+
+}
+
+.gallery-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color-dark);
+}
+
+.gallery-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color-dark);
+}
