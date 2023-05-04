@@ -7,7 +7,41 @@
     --secondary-text-color-light: #F4F4FD;
     --accent-color: #4D5AE5;
     --accent-color-two: #404BBF;
+    --accent-color-three: #F4F4FD;
 }
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+  }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+  }
 
 body {
     font-family: var(--main-font-family);
@@ -15,7 +49,49 @@ body {
     color: var(--primary-text-color-dark);
 }
 
-/* header */
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* ============ header ============= */
+
+.page-header {
+    display: flex;
+    padding: 24px 0;
+    border-bottom: 1px solid #E7E9FC;
+    /* align-items: center; */
+ 
+}
+
+.page-header-container {
+    display: flex;
+  /* align-items: center; */
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: space-between;
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list,
+.nav-address-list {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+
+
 .logo {
     font-family: var(--secondary-font-family);
     font-weight: 800;
@@ -24,7 +100,11 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--accent-color);
-    text-decoration: none;
+    /* text-decoration: none; */
+}
+
+.header-nav .logo {
+    margin-right: 76px;
 }
 
 .logo-black {
@@ -34,40 +114,48 @@ body {
 .nav-address-list {
     font-style: normal;
 }
+
 .contacts {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-text-color-dark);
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 .contacts:hover,
 .contacts:focus {
     color: var(--accent-color-two);
 }
-.link {
-    text-decoration: none;
-}
-.list {
-    list-style: none;
-}
-/* footer */
-.section-adrress {
+
+
+
+
+/* ============ footer ============ */
+.section-adress {
     background-color: var(--secondary-text-color-dark);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .logo-white {
     color: var(--secondary-text-color-light);
 }
 .footer-text {
-    background-color: var(--primary-text-color-light);
+   color: var(--primary-text-color-light);
+    width: 264px;
+    margin-top: 16px;
 }
+
+
 /* index.html */
-/* hero */
+/* ============ hero ============ */
 .hero {
     background-color: var(--secondary-text-color-dark);
+    padding-top: 188px;
+    padding-bottom: 188px;
+    text-align: center;
 }
 
 .hero-title {
@@ -76,6 +164,8 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--primary-text-color-light);
+    width: 496px;
+    margin: 0 auto 48px;
 }
 
 .hero-btn {
@@ -87,6 +177,9 @@ body {
     letter-spacing: 0.04em;
     color: var(--primary-text-color-light);
     cursor: pointer;
+    padding: 16px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -94,7 +187,7 @@ body {
     background-color: var(--accent-color-two);
 }
 
-/* features */
+/* ============ features  ============ */
 .features-text {
     font-size: 16px;
     line-height: 1.5;
@@ -110,7 +203,18 @@ body {
     color: var(--secondary-text-color-dark);
 }
 
-/* we doing */
+.section-features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+
+.features-list {
+display: flex;
+column-gap: 24px;
+}
+
+/* ============ we doing ============ */
 .works-title {
     font-size: 36px;
     line-height: 1.11;
@@ -118,15 +222,24 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--secondary-text-color-dark);
+    margin-bottom: 72px;
 }
 
 .works-list {
     background-color: var(--primary-text-color-light);
+    display: flex;
+    column-gap: 24px;
 }
 
-/* our team */
+.section-works {
+    padding-bottom: 120px;
+}
+
+/* ============ our team ============ */
 .section-team {
-    background-color: #F4F4FD;
+    background-color: var(--accent-color-three);
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .team-title {
@@ -136,6 +249,7 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--secondary-text-color-dark);
+    padding-bottom: 72px;
 }
 
 .team-caption {
@@ -144,6 +258,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color-dark);
+    margin: 32px 0 8px;
 }
 
 .team-text {
@@ -156,16 +271,24 @@ body {
 
 .team-list-elem {
     background-color: var(--primary-text-color-light);
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+.team-list {
+    display: flex;
+    column-gap: 24px;
 }
 
 /* portfolio.html */
+/* 
 .header-nav {
     list-style: none;
 }
 
 .nav-list {
     list-style: none;
-}
+} */
 
 .nav-address {
     font-style: normal;
@@ -177,8 +300,9 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color-dark);
-    text-decoration: none;
+    /* text-decoration: none; */
 }
+
 
 .nav-link:hover,
 .nav-link:focus {
@@ -193,6 +317,9 @@ body {
     letter-spacing: 0.04em;
     color: var(--accent-color);
     background-color: var(--secondary-text-color-light);
+    padding: 12px 24px;
+    border: 1px solid #E7E9FC;
+border-radius: 4px;
 }
 
 .btn-nav:hover,
@@ -202,11 +329,33 @@ body {
     cursor: pointer;
 }
 
+.btn-list {
+    display: flex;
+    column-gap: 24px;
+    padding: 96px 0 72px;
+    justify-content: center;
+}
+
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    justify-content: center;
+   
+}
+.gallery-list li {
+padding-bottom: 32px;
+border: 1px solid #E7E9FC;
+margin-bottom: 48px;
+box-sizing: border-box;
+}
+
 /* gallery */
-.gallery-link {
+
+/* .gallery-link {
     text-decoration: none;
 
-}
+} */
 
 .gallery-title {
     font-weight: 500;
@@ -214,6 +363,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color-dark);
+ margin: 32px 0 8px 16px;
 }
 
 .gallery-text {
@@ -222,4 +372,5 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-text-color-dark);
+    margin: 0 0 0 16px;
 }
