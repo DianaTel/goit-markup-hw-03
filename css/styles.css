@@ -62,22 +62,18 @@ body {
 
 .page-header {
     display: flex;
-    padding: 24px 0;
     border-bottom: 1px solid #E7E9FC;
     /* align-items: center; */
  
 }
 
-.page-header-container {
+.page-header-container  {
     display: flex;
   /* align-items: center; */
-  width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
   justify-content: space-between;
+
 }
+
 
 .header-nav{
     display: flex;
@@ -88,7 +84,8 @@ body {
 .nav-address-list {
     display: flex;
     align-items: center;
-    column-gap: 40px;
+    gap: 40px;
+    padding: 24px 0;
 }
 
 
