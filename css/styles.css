@@ -41,6 +41,8 @@ ul {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
   }
 
 body {
@@ -292,6 +294,10 @@ gap: 24px;
     gap: 24px;
 }
 
+.team-container {
+    padding: 32px 16px;
+}
+
 /* portfolio.html */
 /* 
 .header-nav {
@@ -312,6 +318,7 @@ gap: 24px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color-dark);
+    padding: 24px 0;
     /* text-decoration: none; */
 }
 
