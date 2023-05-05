@@ -142,7 +142,6 @@ body {
 .footer-text {
    color: var(--primary-text-color-light);
     width: 264px;
-    margin-top: 16px;
 }
 
 
@@ -259,7 +258,7 @@ gap: 24px;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--secondary-text-color-dark);
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .team-caption {
@@ -268,7 +267,8 @@ gap: 24px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color-dark);
-    margin: 32px 0 8px;
+    margin-bottom: 8px;
+    text-align: center;
 }
 
 .team-text {
@@ -277,17 +277,19 @@ gap: 24px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-text-color-dark);
+    text-align: center;
 }
 
 .team-list-elem {
     background-color: var(--primary-text-color-light);
-    text-align: center;
+    width: calc((100% - 3 * 24px) / 4);
+    border-radius: 0px 0px 4px 4px;
     padding-bottom: 32px;
 }
 
 .team-list {
     display: flex;
-    column-gap: 24px;
+    gap: 24px;
 }
 
 /* portfolio.html */
@@ -341,15 +343,15 @@ border-radius: 4px;
 
 .btn-list {
     display: flex;
-    column-gap: 24px;
-    padding: 96px 0 72px;
+    gap: 24px;
+    padding-bottom: 72px;
     justify-content: center;
 }
 
 .gallery-list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
+    gap: 24px;
     justify-content: center;
    
 }
@@ -383,4 +385,17 @@ box-sizing: border-box;
     letter-spacing: 0.02em;
     color: var(--primary-text-color-dark);
     margin: 0 0 0 16px;
+}
+
+.gallery-section {
+    padding: 96px 0 120px;
+}
+
+
+
+
+/*  */
+.section-adress .container .logo {
+    display: inline-block;
+    margin-bottom: 16px;
 }
