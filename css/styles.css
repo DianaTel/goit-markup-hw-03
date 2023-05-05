@@ -339,20 +339,23 @@ border-radius: 4px;
     color: var(--primary-text-color-light);
     background-color: var(--accent-color-two);
     cursor: pointer;
+    border: 1px solid transparent;
 }
 
 .btn-list {
     display: flex;
     gap: 24px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     justify-content: center;
 }
 
 .gallery-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 48px;
     justify-content: center;
+
    
 }
 /* .gallery-list li {
@@ -396,7 +399,9 @@ box-sizing: border-box;
     border-top: none;
 }
 
-
+.gallery-item {
+    width: calc((100% - 48px) / 3)
+}
 
 /*  */
 .section-adress .container .logo {
