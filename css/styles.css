@@ -355,12 +355,12 @@ border-radius: 4px;
     justify-content: center;
    
 }
-.gallery-list li {
+/* .gallery-list li {
 padding-bottom: 32px;
 border: 1px solid #E7E9FC;
 margin-bottom: 48px;
 box-sizing: border-box;
-}
+} */
 
 /* gallery */
 
@@ -375,7 +375,7 @@ box-sizing: border-box;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color-dark);
- margin: 32px 0 8px 16px;
+    margin-bottom: 8px;
 }
 
 .gallery-text {
@@ -384,13 +384,17 @@ box-sizing: border-box;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-text-color-dark);
-    margin: 0 0 0 16px;
 }
 
 .gallery-section {
     padding: 96px 0 120px;
 }
 
+.gallery-container {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
 
 
 
