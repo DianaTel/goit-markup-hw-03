@@ -59,6 +59,19 @@ body {
     padding-right: 15px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 /* ============ header ============= */
 
@@ -70,6 +83,7 @@ body {
 .page-header-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-nav {
@@ -100,7 +114,6 @@ body {
     display: flex;
     align-items: center;
     gap: 40px;
-    padding: 24px 0;
 }
 
 .nav-link {
@@ -109,6 +122,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color-dark);
+    display: block;
     padding: 24px 0;
 }
 
@@ -131,6 +145,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-text-color-dark);
+    display: block;
+    padding: 24px 0;
 }
 
 .contacts:hover,
@@ -154,6 +170,10 @@ body {
 .footer-text {
     color: var(--primary-text-color-light);
     width: 264px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
 }
 
 .section-adress .container .logo {
@@ -290,7 +310,6 @@ body {
     background-color: var(--primary-text-color-light);
     width: calc((100% - 3 * 24px) / 4);
     border-radius: 0px 0px 4px 4px;
-    padding-bottom: 32px;
 }
 
 .team-container {
@@ -390,3 +409,4 @@ body {
     letter-spacing: 0.02em;
     color: var(--primary-text-color-dark);
 }
+
